@@ -1,0 +1,63 @@
+@import '../../scss/variables';
+@import '../../scss/mixins.scss';
+
+.form {
+    height: 500px;
+    background-image: url('../../assets/form/form.png');
+    position: relative;
+
+    @include mQ(821px) {
+        height: 450px;
+    }
+
+    &-container {
+        width: 30%;
+        position: absolute;
+        right: 100px;
+        top: 40px;
+
+        @include mQ(1161px) {
+            right: 50px;
+        }
+
+        @include mQ(821px) {
+            position: static;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+
+    // &-fields {
+    //     position: relative;
+    //     // left: 50px;
+    // }
+}
+
+.form-title {
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    color: #ffff;
+    font-size: 48px;
+}
+
+.f-text {
+    position: absolute;
+    top: 108px;
+    left: 400px;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    opacity: 60%;
+    font-weight: 800;
+    border-radius: 5px;
+
+    @include mQ(1161px) {
+        left: 200px;
+    }
+
+    @include mQ(821px) {
+        display: none;
+    }
+}

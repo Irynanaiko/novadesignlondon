@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+
+.toggle-menu {
+    text-align: center;
+}
+
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.nav-link {
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.active {
+    border-bottom: 2px solid #ffff;
+}
