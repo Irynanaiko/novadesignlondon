@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
+import { navLinks } from '../../constants/links';
 import './Header.scss';
 
 function Header() {
@@ -20,21 +21,11 @@ function Header() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="toggle-menu">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/">
-                            Home
-                        </Nav.Link>
-                        <Nav.Link as={Link} to="about_us">
-                            About us
-                        </Nav.Link>
-                        <Nav.Link as={Link} to="kitchens">
-                            Kitchens
-                        </Nav.Link>
-                        <Nav.Link as={Link} to="wardrobs">
-                            Wardrobs
-                        </Nav.Link>
-                        <Nav.Link as={Link} to="contacts">
-                            Contacts
-                        </Nav.Link>
+                        {navLinks.map(({ title, link }) => (
+                            <Nav.Link as={Link} to={link}>
+                                {title}
+                            </Nav.Link>
+                        ))}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
