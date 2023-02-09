@@ -40,7 +40,7 @@ function Footer() {
                         </Stack>
                     </Col>
                     <Col sm={6}>
-                        <Nav className="w-100 h-100 justify-content-center align-items-center gap-sm-1 gap-lg-3">
+                        <Nav className="w-100 h-100 justify-content-center align-items-center gap-sm-1 gap-xl-3 flex-nowrap">
                             {navLinks.map(({ title, link }) => (
                                 <Nav.Link as={Link} to={link} className="text-white">
                                     {title}
