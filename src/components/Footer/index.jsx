@@ -24,8 +24,7 @@ function Footer() {
                                 gap={2}
                                 className="justify-content-center justify-content-lg-start"
                             >
-                                {/* TODO this svg scales when screen size changes, needs
-                                investigation */}
+                                {/* TODO EnvelopeIcon scales when screen size changes because text novadesignslondon@gmail.com* is too long to fit in the section */}
                                 <EnvelopeIcon className="footer-icon" />
                                 <Link
                                     to="mailto:novadesignslondon@gmail.com"
