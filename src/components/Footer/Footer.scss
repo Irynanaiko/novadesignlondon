@@ -1,3 +1,31 @@
+@import '../../scss/mixins.scss';
+
 .footer {
     background-image: url('../../assets/footer/footer.png');
+}
+
+.footer-nav {
+    min-height: 80px;
+}
+
+.footer-section-title {
+    font-size: 24px;
+
+    @include mQ(1400px) {
+        font-size: 20px;
+    }
+}
+
+.footer-section-text {
+    font-size: 16px;
+
+    @include mQ(1400px) {
+        font-size: 14px;
+    }
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    color: white;
 }
