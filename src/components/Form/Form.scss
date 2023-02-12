@@ -2,11 +2,11 @@
 @import '../../scss/mixins.scss';
 
 .f-container {
-    height: 500px;
+    padding: 50px 0px;
     background-image: url('../../assets/form/form.png');
 
     @include mQ(821px) {
-        height: 450px;
+        padding: 25px 0px;
     }
 }
 
@@ -16,6 +16,14 @@
     color: #ffff;
     font-size: 48px;
     text-align: end;
+}
+
+.f-info-container {
+    padding-top: 66px;
+
+    @include mQ(768px) {
+        padding-top: 0px;
+    }
 }
 
 .f-info {
