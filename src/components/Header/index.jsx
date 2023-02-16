@@ -5,7 +5,7 @@ import logo from '../../assets/logo.svg';
 import { navLinks } from '../../constants/links';
 import './Header.scss';
 
-function Header() {
+export default function Header() {
     return (
         <Navbar bg="dark" variant="dark" expand="md">
             <Container>
@@ -32,5 +32,3 @@ function Header() {
         </Navbar>
     );
 }
-
-export { Header };

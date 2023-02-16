@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import './Form.scss';
 
-function Forms() {
+export default function RequestForm() {
     return (
         <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 gap-lg-5 f-container">
             <div className="f-info-container align-self-md-start">
@@ -43,5 +43,3 @@ function Forms() {
         </div>
     );
 }
-
-export { Forms };

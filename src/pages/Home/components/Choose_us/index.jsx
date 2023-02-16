@@ -2,14 +2,14 @@ import React from 'react';
 import './Choose_us.scss';
 import { Col, Row } from 'react-bootstrap';
 
-import BadgeIcon from '../icons/BadgeIcon';
-import CrownIcon from '../icons/CrownIcon';
-import DatabaseIcon from '../icons/DatabaseIcon';
-import DiamondIcon from '../icons/DiamondIcon';
-import EarthIcon from '../icons/EarthIcon';
-import HeartIcon from '../icons/HeartIcon';
+import BadgeIcon from 'components/icons/BadgeIcon';
+import CrownIcon from 'components/icons/CrownIcon';
+import DatabaseIcon from 'components/icons/DatabaseIcon';
+import DiamondIcon from 'components/icons/DiamondIcon';
+import EarthIcon from 'components/icons/EarthIcon';
+import HeartIcon from 'components/icons/HeartIcon';
 
-function ChooseUs() {
+export default function ChooseUs() {
     return (
         <div className="choose-container">
             <h4 className="choose-title">Why our clients choose Nova Designs London?</h4>
@@ -42,5 +42,3 @@ function ChooseUs() {
         </div>
     );
 }
-
-export { ChooseUs };

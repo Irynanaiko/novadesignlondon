@@ -9,7 +9,7 @@ import InstagramIcon from '../icons/InstagramIcon';
 import FacebookIcon from '../icons/FacebookIcon';
 import { navLinks } from '../../constants/links';
 
-function Footer() {
+export default function Footer() {
     return (
         <div className="footer">
             <Container fluid="xl">
@@ -88,5 +88,3 @@ function Footer() {
         </div>
     );
 }
-
-export { Footer };

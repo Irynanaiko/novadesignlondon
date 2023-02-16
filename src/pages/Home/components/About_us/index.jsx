@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import './AboutUs.scss';
 
-function AboutUs() {
+export default function AboutUs() {
     return (
         <>
             <Row className="text-rigth">
@@ -24,22 +24,14 @@ function AboutUs() {
                 </Col>
                 <Col xs={12} md={7} className="pading">
                     <div className="img-block">
-                        <img
-                            className="img"
-                            src={require('../../assets/kitchen1.png')}
-                            alt="kitchen"
-                        />
+                        <img className="img" src={require('assets/kitchen1.png')} alt="kitchen" />
                     </div>
                 </Col>
             </Row>
             <Row className="m-0">
                 <Col xs={12} md={5} className="pading col1">
                     <div className="img-block">
-                        <img
-                            className="img"
-                            src={require('../../assets/kitchen2.png')}
-                            alt="kitchen"
-                        />
+                        <img className="img" src={require('assets/kitchen2.png')} alt="kitchen" />
                     </div>
                 </Col>
                 <Col xs={12} md={7} className="pading col2">
@@ -48,7 +40,7 @@ function AboutUs() {
                             <div className="about-move_title">
                                 <img
                                     className="about_img"
-                                    src={require('../../assets/about/truck.png')}
+                                    src={require('assets/about/truck.png')}
                                     alt="move"
                                 />
                                 <div className="about-move_title-1">Have you just move in? </div>
@@ -64,7 +56,7 @@ function AboutUs() {
                             <div className="about-move_title">
                                 <img
                                     className="about_img_renovating"
-                                    src={require('../../assets/about/renovation.png')}
+                                    src={require('assets/about/renovation.png')}
                                     alt="move"
                                 />
                                 <div className="about-move_title-1">
@@ -84,5 +76,3 @@ function AboutUs() {
         </>
     );
 }
-
-export { AboutUs };
