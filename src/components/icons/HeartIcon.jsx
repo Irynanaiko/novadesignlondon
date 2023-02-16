@@ -1,14 +1,12 @@
 import React from 'react';
-import '../../scss/icons.scss';
 
-export default function HeartIcon() {
+export default function HeartIcon({ className }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
-            class="bi bi-heart-fill"
             viewBox="0 0 16 16"
-            className="icon"
+            className={className}
         >
             <path
                 fill-rule="evenodd"

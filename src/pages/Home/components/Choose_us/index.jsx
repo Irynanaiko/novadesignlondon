@@ -15,27 +15,27 @@ export default function ChooseUs() {
             <h4 className="choose-title">Why our clients choose Nova Designs London?</h4>
             <Row>
                 <Col xs="12" md="6" lg="4">
-                    <DiamondIcon />
+                    <DiamondIcon className="choose_us-icon" />
                     <div className="choose-descr">High standards and competitive pricing</div>
                 </Col>
                 <Col xs="12" md="6" lg="4">
-                    <HeartIcon />
+                    <HeartIcon className="choose_us-icon" />
                     <div className="choose-descr">Free designs and consultations</div>
                 </Col>
                 <Col xs="12" md="6" lg="4">
-                    <DatabaseIcon />
+                    <DatabaseIcon className="choose_us-icon" />
                     <div className="choose-descr">Unigue design</div>
                 </Col>
                 <Col xs="12" md="6" lg="4">
-                    <EarthIcon />
+                    <EarthIcon className="choose_us-icon" />
                     <div className="choose-descr">Many testimonials from previous clients</div>
                 </Col>
                 <Col xs="12" md="6" lg="4">
-                    <CrownIcon />
+                    <CrownIcon className="choose_us-icon" />
                     <div className="choose-descr">Prompt delivery and quality installation</div>
                 </Col>
                 <Col xs="12" md="6" lg="4">
-                    <BadgeIcon />
+                    <BadgeIcon className="choose_us-icon" />
                     <div className="choose-descr">Individual approach to every project</div>
                 </Col>
             </Row>
